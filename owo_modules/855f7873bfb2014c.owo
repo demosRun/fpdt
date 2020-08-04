@@ -1,0 +1,158 @@
+<template lang="pug">
+.loading-box
+  img.so.so-0(src="@|icon345.png|")
+  img.so.so-1(src="@|icon344.png|")
+  img.so.so-2(src="@|icon346.png|")
+  img.so.so-3(src="@|icon347.png|")
+  img.so.so-4(src="@|icon343.png|")
+  img.so.so-5(src="@|icon322.png|")
+  img.so.so-6(src="@|icon341.png|")
+  img.so.so-7(src="@|icon342.png|")
+  img.so.so-8(src="@|icon340.png|")
+  img.so.so-9(src="@|icon337.png|")
+  img.so.so-10(src="@|icon339.png|")
+  img.so.so-11(src="@|icon338.png|")
+  .loading-bar
+    .num-bar
+  span.text Loading
+  .num 0%
+</template>
+
+<script>
+  module.exports = {
+    data: {
+      imgList: [
+        ""
+      ]
+    },
+    show: function () {
+      const mum = owo.query('.num')[0]
+      const numBar = owo.query('.num-bar')[0]
+      this.preloadImages(this.data.imgList, (e) => {
+        setTimeout(() => {
+          // owo.go({noBack: true,page: "page1"})
+          owo.go("page1////true")
+        }, 500)
+      }, (num) => {
+        numBar.style.width = num + '%'
+        mum.innerHTML = num + '%'
+      })
+    },
+    preloadImage: function (src, successFn) {
+      var image = new Image()
+      image.src = src
+      image.onload = function () {
+        successFn && successFn(src)
+      }
+      image.onerror = function (error) {
+        successFn && successFn(src)
+      }
+    },
+    preloadImages: function (srcs, doneFn, progressFn) {
+      if (!Array.isArray(srcs)) {
+        console.log('第一个参数只能是一个数组')
+      } else {
+        var allCount = srcs.length
+        var doneCount = 0
+        srcs.forEach((srcItem) => {
+          this.preloadImage(srcItem, function () {
+            doneCount++
+            progressFn && progressFn(Math.ceil(100 * doneCount / allCount))
+            if (doneCount === allCount) {
+              doneFn && doneFn()
+            }
+          })
+        })
+      }
+    }
+  }
+</script>
+
+
+<style lang="less">
+.loading-box {
+  width: 100%;
+  height: 100%;
+  background-image: url('@|page1-542.jpg|');
+}
+.so {
+  position: absolute;
+}
+.so-0 {
+  left: 391px;
+  top: 208px;
+  z-index: 11;
+}
+.so-1 {
+  left: 128px;
+  top: 319px;
+  z-index: 10;
+}
+.so-2 {
+  left: 472px;
+  top: 425px;
+  z-index: 9;
+}
+.so-3 {
+  left: 304px;
+  top: 530px;
+  z-index: 8;
+}
+.so-4 {
+  left: 118px;
+  top: 599px;
+  z-index: 7;
+}
+.so-5 {
+  left: 203px;
+  top: 799px;
+  z-index: 6;
+}
+.so-6 {
+  left: 458px;
+  top: 666px;
+  z-index: 5;
+}
+.so-7 {
+  left: 336px;
+  top: 833px;
+  z-index: 4;
+}
+.so-8 {
+  left: 510px;
+  top: 828px;
+  z-index: 3;
+}
+.so-9 {
+  left: 204px;
+  top: 934px;
+  z-index: 2;
+}
+.so-10 {
+  left: 459px;
+  top: 978px;
+  z-index: 1;
+}
+.so-11 {
+  left: 349px;
+  top: 1051px;
+  z-index: 0;
+}
+.loading-bar {
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 1180px;
+  width: 500px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  .num-bar {
+    height: 100%;
+    background-color: #3e724a;
+  }
+}
+</style>

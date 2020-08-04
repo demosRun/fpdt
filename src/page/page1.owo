@@ -1,0 +1,117 @@
+<template lang="pug">
+.page-1
+  img.so.so-0(src="@|page1-274.png|")
+  img.so.so-1(src="@|page1-546.png|")
+  img.so.so-2(src="@|page1-555.png|")
+  img.so.so-3(src="@|page1-549.png|")
+  img.so.so-4(src="@|page1-550.png|")
+  img.so.so-5(src="@|page1-551.png|")
+  img.so.so-6(src="@|page1-552.png|")
+  img.so.so-7(src="@|page1-553.png|")
+  img.so.so-8(src="@|page1-548.png|")
+  img.so.so-13(src="@|page1-547.png|")
+  .so.so-9(go="page2//moveToLeft/moveFromRight/true")
+    img.so.so-10(src="@|page1-536.png|")
+    img.so.so-11(src="@|page1-537.png|")
+  img.so.so-12(src="@|page1-538.png|")
+
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      owo.animate('lightSpeedIn', this.query('.so-13'), 2500)
+      owo.animate('rotateIn', this.query('.so-3'), 0)
+      owo.animate('rotateIn', this.query('.so-4'), 500)
+      owo.animate('rotateIn', this.query('.so-5'), 1000)
+      owo.animate('rotateIn', this.query('.so-6'), 1500)
+      owo.animate('rotateIn', this.query('.so-7'), 2000)
+    }
+  }
+</script>
+
+
+<style lang="less">
+.page-1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('@|page1-542.jpg|');
+}
+.so {
+  position: absolute;
+}
+.so-0 {
+  left: 85px;
+  top: 188px;
+  z-index: 10;
+}
+.so-1 {
+  left: 204px;
+  top: 399px;
+  z-index: 9;
+}
+.so-2 {
+  left: 57px;
+  top: 530px;
+  z-index: 8;
+}
+.so-3 {
+  left: 136px;
+  top: 472px;
+  z-index: 7;
+}
+.so-4 {
+  left: 38px;
+  top: 584px;
+  z-index: 6;
+}
+.so-5 {
+  left: 123px;
+  top: 688px;
+  z-index: 5;
+}
+.so-6 {
+  left: 131px;
+  top: 889px;
+  z-index: 4;
+}
+.so-7 {
+  left: 378px;
+  top: 811px;
+  z-index: 3;
+}
+.so-8 {
+  left: 514px;
+  top: 1000px;
+  z-index: 2;
+}
+.so-9 {
+  left: 239px;
+  top: 1038px;
+  width: 272px;
+  height: 115px;
+  z-index: 1;
+}
+.so-10 {
+  left: 14px;
+  top: 0px;
+  z-index: 0;
+}
+.so-11 {
+  left: 0px;
+  top: 16px;
+  z-index: -1;
+}
+.so-12 {
+  left: 121px;
+  top: 1258px;
+  z-index: -2;
+}
+.so-10:active {
+  transform: translate(0px, 5px);
+}
+.so-13 {
+  left: 387px;
+  top: 665px;
+}
+</style>
