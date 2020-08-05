@@ -3,91 +3,99 @@
   .daka-bg
     img.next(src="@|right-button.png|")
   .shijian 2020
+  .show-text-box
+    .show-text
+      h1 2012年12月29日至30日<br>河北考察
+      img.close(src="@|close.png|" o-tap="hideShow")
+      img.show(src="@|show.png|")
+      .text
+        p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+        p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
   .swiper-container
     .swiper-wrapper
       .swiper-slide.clear
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|daka-icon-hebei.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|daka-icon-gansu.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|daka-icon-hainan.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|daka-icon-hubei.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|daka-icon-hunan.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|daka-icon-shandong.png|")
       .swiper-slide.clear
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|neimenggu.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|henan.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|xinjiang.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|daka-icon-fujian.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|jiangsu.png|")
       .swiper-slide.clear
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|yunan.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|shanxi.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|zhejiang.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|guizhou.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|jilin.png|")
       .swiper-slide.clear
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|hebei-0.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|guangxi.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|shannxi.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|jiangsu.png|")
       .swiper-slide.clear
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|sichuan.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|daka-icon-hainan.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|daka-icon-hubei.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|daka-icon-shandong.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|dongbei.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|guangdng.png|")
       .swiper-slide.clear
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|jingjinji.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|chongqing.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|jiangxi.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|neimenggu.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|gansu.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|henan-0.png|")
       //- 2020
       .swiper-slide.clear
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|yunan.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|zhejiang.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|shanxi.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|shannxi.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|ningxia.png|")
-        .swiper-slide-item
+        .swiper-slide-item(o-tap="showBox")
           img(src="@|jilin.png|")
 </template>
 <script>
@@ -95,6 +103,12 @@ module.exports = {
   created: function () {
     var swiper = new Swiper('.swiper-container', {
     })
+  },
+  hideShow: function () {
+    this.query('.show-text-box').style.display = 'none'
+  },
+  showBox: function () {
+    this.query('.show-text-box').style.display = 'block'
   }
 }
 </script>
@@ -153,5 +167,62 @@ module.exports = {
   font-weight: bold;
   color: #3e724a;
   background-position: 0px 3px;
+}
+.show-text-box {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+  .show {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 182px;
+  }
+  h1 {
+    color: #3e724a;
+    font-size: 44px;
+    line-height: 57px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    left: 0;
+    right: 0;
+  }
+  .text {
+    position: absolute;
+    top: 610px;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 30px;
+    line-height: 48px;
+    text-indent: 2em;
+    color: #7c7c7c;
+  }
+}
+.show-text {
+  background-image: url('@|text-bg.png|');
+  width: 676px;
+  height: 1063px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
 }
 </style>

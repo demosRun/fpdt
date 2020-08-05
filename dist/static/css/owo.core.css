@@ -313,6 +313,69 @@ li {
   background-position: 0px 3px;
 }
 
+.page2 .show-text-box {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+}
+
+.page2 .show-text-box .show {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 182px;
+}
+
+.page2 .show-text-box h1 {
+  color: #3e724a;
+  font-size: 44px;
+  line-height: 57px;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  left: 0;
+  right: 0;
+}
+
+.page2 .show-text-box .text {
+  position: absolute;
+  top: 610px;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 30px;
+  line-height: 48px;
+  text-indent: 2em;
+  color: #7c7c7c;
+}
+
+.page2 .show-text {
+  background-image: url('../resource/text-bg.png');
+  width: 676px;
+  height: 1063px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.page2 .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 20px;
+}
+
 /* 页面切换动画 */
 .o-page-moveToLeft {
 	-webkit-animation: moveToLeft .6s ease both;
