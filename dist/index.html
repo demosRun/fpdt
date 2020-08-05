@@ -25,6 +25,7 @@
       
     <!-- 附属css文件 -->
     <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
+    <link rel="stylesheet" href="./static/css/swiper.4.5.0.min.css" charset="utf-8">
       
   </head>
   <body>
@@ -34,7 +35,7 @@
     <!-- 页面[page1]-->
     <div class="page-1 page" template="page1" style="display: none;"><img class="so so-0" src="./static/resource/page1-274.png"><img class="so so-1" src="./static/resource/page1-546.png"><img class="so so-2" src="./static/resource/page1-555.png"><img class="so so-3" src="./static/resource/page1-549.png"><img class="so so-4" src="./static/resource/page1-550.png"><img class="so so-5" src="./static/resource/page1-551.png"><img class="so so-6" src="./static/resource/page1-552.png"><img class="so so-7" src="./static/resource/page1-553.png"><img class="so so-8" src="./static/resource/page1-548.png"><img class="so so-13" src="./static/resource/page1-547.png"><div class="so so-9" go="page2//moveToLeft/moveFromRight/true"><img class="so so-10" src="./static/resource/page1-536.png"><img class="so so-11" src="./static/resource/page1-537.png"></div><img class="so so-12" src="./static/resource/page1-538.png"></div>
     <!-- 页面[page2]-->
-    <div class="page2 page" template="page2" style="display: none;"></div>
+    <div class="page2 page" template="page2" style="display: none;"><div class="daka-bg"><img class="next" src="./static/resource/right-button.png"></div><div class="shijian">2020</div><div class="swiper-container"><div class="swiper-wrapper"><div class="swiper-slide clear"><div class="swiper-slide-item"><img src="./static/resource/daka-icon-hebei.png"></div><div class="swiper-slide-item"><img src="./static/resource/daka-icon-gansu.png"></div><div class="swiper-slide-item"><img src="./static/resource/daka-icon-hainan.png"></div><div class="swiper-slide-item"><img src="./static/resource/daka-icon-hubei.png"></div><div class="swiper-slide-item"><img src="./static/resource/daka-icon-hunan.png"></div><div class="swiper-slide-item"><img src="./static/resource/daka-icon-shandong.png"></div></div><div class="swiper-slide clear"><div class="swiper-slide-item"><img src="./static/resource/neimenggu.png"></div><div class="swiper-slide-item"><img src="./static/resource/henan.png"></div><div class="swiper-slide-item"><img src="./static/resource/xinjiang.png"></div><div class="swiper-slide-item"><img src="./static/resource/daka-icon-fujian.png"></div><div class="swiper-slide-item"><img src="./static/resource/jiangsu.png"></div></div><div class="swiper-slide clear"><div class="swiper-slide-item"><img src="./static/resource/yunan.png"></div><div class="swiper-slide-item"><img src="./static/resource/shanxi.png"></div><div class="swiper-slide-item"><img src="./static/resource/zhejiang.png"></div><div class="swiper-slide-item"><img src="./static/resource/guizhou.png"></div><div class="swiper-slide-item"><img src="./static/resource/jilin.png"></div></div><div class="swiper-slide clear"><div class="swiper-slide-item"><img src="./static/resource/hebei-0.png"></div><div class="swiper-slide-item"><img src="./static/resource/guangxi.png"></div><div class="swiper-slide-item"><img src="./static/resource/shannxi.png"></div><div class="swiper-slide-item"><img src="./static/resource/jiangsu.png"></div></div><div class="swiper-slide clear"><div class="swiper-slide-item"><img src="./static/resource/sichuan.png"></div><div class="swiper-slide-item"><img src="./static/resource/daka-icon-hainan.png"></div><div class="swiper-slide-item"><img src="./static/resource/daka-icon-hubei.png"></div><div class="swiper-slide-item"><img src="./static/resource/daka-icon-shandong.png"></div><div class="swiper-slide-item"><img src="./static/resource/dongbei.png"></div><div class="swiper-slide-item"><img src="./static/resource/guangdng.png"></div></div><div class="swiper-slide clear"><div class="swiper-slide-item"><img src="./static/resource/jingjinji.png"></div><div class="swiper-slide-item"><img src="./static/resource/chongqing.png"></div><div class="swiper-slide-item"><img src="./static/resource/jiangxi.png"></div><div class="swiper-slide-item"><img src="./static/resource/neimenggu.png"></div><div class="swiper-slide-item"><img src="./static/resource/gansu.png"></div><div class="swiper-slide-item"><img src="./static/resource/henan-0.png"></div></div><div class="swiper-slide clear"><div class="swiper-slide-item"><img src="./static/resource/yunan.png"></div><div class="swiper-slide-item"><img src="./static/resource/zhejiang.png"></div><div class="swiper-slide-item"><img src="./static/resource/shanxi.png"></div><div class="swiper-slide-item"><img src="./static/resource/shannxi.png"></div><div class="swiper-slide-item"><img src="./static/resource/ningxia.png"></div><div class="swiper-slide-item"><img src="./static/resource/jilin.png"></div></div></div></div></div>
     <!-- 页面[page3]-->
     <div class="page3 page" template="page3" style="display: none;"></div></div>
     
@@ -42,6 +43,7 @@
     <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript"  charset="UTF-8"></script>
     <script src="./static/js/main.js" type="text/javascript"  charset="UTF-8"></script>
     <script src="https://cunchu.site/owo/plug/autoScale.js" type="text/javascript"  charset="UTF-8"></script>
+    <script src="./static/js/swiper.4.5.0.min.js" type="text/javascript"  charset="UTF-8"></script>
 <!-- 框架script文件 -->
 <script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
 <script type="text/javascript" charset="UTF-8">
@@ -106,7 +108,11 @@ owo.script = {
       owo.animate('rotateIn', this.query('.so-7'), 2000);
     }
   },
-  "page2": {},
+  "page2": {
+    "created": function created() {
+      var swiper = new Swiper('.swiper-container', {});
+    }
+  },
   "page3": {}
 };
 </script>

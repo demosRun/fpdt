@@ -1,10 +1,157 @@
 <template lang="pug">
 .page2
-  
+  .daka-bg
+    img.next(src="@|right-button.png|")
+  .shijian 2020
+  .swiper-container
+    .swiper-wrapper
+      .swiper-slide.clear
+        .swiper-slide-item
+          img(src="@|daka-icon-hebei.png|")
+        .swiper-slide-item
+          img(src="@|daka-icon-gansu.png|")
+        .swiper-slide-item
+          img(src="@|daka-icon-hainan.png|")
+        .swiper-slide-item
+          img(src="@|daka-icon-hubei.png|")
+        .swiper-slide-item
+          img(src="@|daka-icon-hunan.png|")
+        .swiper-slide-item
+          img(src="@|daka-icon-shandong.png|")
+      .swiper-slide.clear
+        .swiper-slide-item
+          img(src="@|neimenggu.png|")
+        .swiper-slide-item
+          img(src="@|henan.png|")
+        .swiper-slide-item
+          img(src="@|xinjiang.png|")
+        .swiper-slide-item
+          img(src="@|daka-icon-fujian.png|")
+        .swiper-slide-item
+          img(src="@|jiangsu.png|")
+      .swiper-slide.clear
+        .swiper-slide-item
+          img(src="@|yunan.png|")
+        .swiper-slide-item
+          img(src="@|shanxi.png|")
+        .swiper-slide-item
+          img(src="@|zhejiang.png|")
+        .swiper-slide-item
+          img(src="@|guizhou.png|")
+        .swiper-slide-item
+          img(src="@|jilin.png|")
+      .swiper-slide.clear
+        .swiper-slide-item
+          img(src="@|hebei-0.png|")
+        .swiper-slide-item
+          img(src="@|guangxi.png|")
+        .swiper-slide-item
+          img(src="@|shannxi.png|")
+        .swiper-slide-item
+          img(src="@|jiangsu.png|")
+      .swiper-slide.clear
+        .swiper-slide-item
+          img(src="@|sichuan.png|")
+        .swiper-slide-item
+          img(src="@|daka-icon-hainan.png|")
+        .swiper-slide-item
+          img(src="@|daka-icon-hubei.png|")
+        .swiper-slide-item
+          img(src="@|daka-icon-shandong.png|")
+        .swiper-slide-item
+          img(src="@|dongbei.png|")
+        .swiper-slide-item
+          img(src="@|guangdng.png|")
+      .swiper-slide.clear
+        .swiper-slide-item
+          img(src="@|jingjinji.png|")
+        .swiper-slide-item
+          img(src="@|chongqing.png|")
+        .swiper-slide-item
+          img(src="@|jiangxi.png|")
+        .swiper-slide-item
+          img(src="@|neimenggu.png|")
+        .swiper-slide-item
+          img(src="@|gansu.png|")
+        .swiper-slide-item
+          img(src="@|henan-0.png|")
+      //- 2020
+      .swiper-slide.clear
+        .swiper-slide-item
+          img(src="@|yunan.png|")
+        .swiper-slide-item
+          img(src="@|zhejiang.png|")
+        .swiper-slide-item
+          img(src="@|shanxi.png|")
+        .swiper-slide-item
+          img(src="@|shannxi.png|")
+        .swiper-slide-item
+          img(src="@|ningxia.png|")
+        .swiper-slide-item
+          img(src="@|jilin.png|")
 </template>
 <script>
 module.exports = {
+  created: function () {
+    var swiper = new Swiper('.swiper-container', {
+    })
+  }
 }
 </script>
 <style lang="less">
+.page2 {
+  width: 100%;
+  height: 100%;
+  background-image: url('@|page1-542.jpg|');
+}
+.daka-bg {
+  background-image: url('@|daka-bg.png|');
+  width: 750px;
+  height: 136px;
+  position: absolute;
+  top: 190px;
+}
+.next {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 20px;
+}
+.swiper-container {
+  position: absolute;
+  top: 530px;
+  height: 440px;
+  overflow: hidden;
+  width: 100%;
+}
+.swiper-slide {
+  img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .swiper-slide-item {
+    height: 50%;
+    width: 33.33%;
+    float: left;
+    position: relative;
+  }
+}
+.shijian {
+  background-image: url('@|shijian.png|');
+  position: absolute;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 60px;
+  background-repeat: no-repeat;
+  font-size: 48px;
+  font-weight: bold;
+  color: #3e724a;
+  background-position: 0px 3px;
+}
 </style>

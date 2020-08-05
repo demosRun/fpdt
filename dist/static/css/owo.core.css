@@ -253,7 +253,65 @@ li {
   left: 387px;
   top: 665px;
 }
+.page2 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../resource/page1-542.jpg');
+}
 
+.page2 .daka-bg {
+  background-image: url('../resource/daka-bg.png');
+  width: 750px;
+  height: 136px;
+  position: absolute;
+  top: 190px;
+}
+
+.page2 .next {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 20px;
+}
+
+.page2 .swiper-container {
+  position: absolute;
+  top: 530px;
+  height: 440px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.page2 .swiper-slide img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.page2 .swiper-slide .swiper-slide-item {
+  height: 50%;
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+
+.page2 .shijian {
+  background-image: url('../resource/shijian.png');
+  position: absolute;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 60px;
+  background-repeat: no-repeat;
+  font-size: 48px;
+  font-weight: bold;
+  color: #3e724a;
+  background-position: 0px 3px;
+}
 
 /* 页面切换动画 */
 .o-page-moveToLeft {

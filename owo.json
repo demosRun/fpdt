@@ -85,6 +85,10 @@
 		{
 			"name": "autoScale",
 			"src": "https://cunchu.site/owo/plug/autoScale.js"
+		},
+		{
+			"name": "swiper.4.5.0.min",
+			"src": "./src/resource/swiper.4.5.0.min.js"
 		}
 	],
 	"styleList": [
@@ -92,6 +96,10 @@
 			"name": "main",
 			"src": "./src/main.css",
 			"resource": true
+		},
+		{
+			"name": "swiper.4.5.0.min",
+			"src": "./src/resource/swiper.4.5.0.min.css"
 		}
 	],
 	"pageList": [
