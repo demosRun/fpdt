@@ -17,7 +17,7 @@ module.exports = {
     owo.script.share.switchShare()
   },
   show: function () {
-    const clockNumber = owo.script.page2.data.clockList.length
+    const clockNumber = Object.values(owo.script.page2.data.clockList).length
     this.query('.num').innerText = clockNumber
     if (clockNumber == 0) {
       this.query('.people').innerText = 0

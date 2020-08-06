@@ -247,14 +247,6 @@ li {
   transition: top 1s;
 }
 
-.page2 .show-text-box .show {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 182px;
-}
-
 .page2 .show-text-box h1 {
   color: #3e724a;
   font-size: 44px;
@@ -268,16 +260,19 @@ li {
 }
 
 .page2 .show-text-box .text {
-  position: absolute;
-  top: 610px;
   width: 90%;
-  left: 0;
-  right: 0;
   margin: auto;
   font-size: 28px;
   line-height: 42px;
   text-indent: 2em;
   color: #7c7c7c;
+}
+
+.page2 .edit-box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
 .page2 .show-text {
@@ -361,7 +356,8 @@ li {
 }
 
 .page2 .check-button {
-  top: 940px;
+  position: relative;
+  top: auto;
 }
 
 .page2 .icon-box {
@@ -392,6 +388,21 @@ li {
   display: inline-block;
 }
 
+.page2 .clock-item .ind {
+  position: absolute;
+  right: -5px;
+  top: 0px;
+  background-color: #fdc50f;
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
 .page2 .daka-icon-box {
   position: absolute;
   height: 95px;
@@ -403,6 +414,47 @@ li {
 
 .page2 .clock {
   background-image: url('../resource/index-item-clock.png') !important;
+}
+
+.page2 .edit {
+  display: none;
+}
+
+.page2 .show-image-box {
+  background-image: url('../resource/show-box.png');
+  width: 676px;
+  height: 474px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.page2 .show-image-box img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.page2 .index-num {
+  position: absolute;
+  font-size: 30px;
+  background-color: #fdc50f;
+  color: white;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 20px;
+  font-weight: bold;
+  right: 25px;
+  top: 12px;
+}
+
+.page2 .so-10,
+.page2 .so-11 {
+  pointer-events: none;
 }
 .page3 .share-box {
   width: 512px;

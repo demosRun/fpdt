@@ -8,15 +8,17 @@
 
   .show-text-box
     .show-text
-      h1 2012年12月29日至30日<br>河北考察
       img.close(src="@|close.png|" o-tap="hideShow")
-      img.show(src="@|show.png|")
-      .text
-        p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
-        p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
-      .so.check-button.button-box(o-tap="checkIt")
-        .so.so-10 打卡
-        img.so.so-11(src="@|page1-537.png|")
+      .edit-box
+        h1 2012年12月29日至30日<br>河北考察
+        .show-image-box
+              img.show(src="@|show.png|")
+        .text
+          p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+          p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
+        .so.check-button.button-box(o-tap="checkIt")
+          .so.so-10 打卡
+          img.so.so-11(src="@|page1-537.png|")
   .scrro-box
     .index-bar
       .index-item(style="width: 200px;" o-tap="swiperTo(0)") 2012-2013
@@ -41,111 +43,477 @@
     .swiper-wrapper
       .swiper-slide.clear
         .swiper-slide-item(o-tap="showBox")
-          img(src="@|daka-icon-hebei.png|")
+          .index-num
+          img(src="@|hebei-0.png|")
+          .edit
+            h1 2012年12月29日至30日<br>1河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
+          .edit
+            h1 2012年12月29日至30日<br>1河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|daka-icon-gansu.png|")
+          .edit
+            h1 2012年12月29日至30日<br>2河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|daka-icon-hainan.png|")
+          .edit
+            h1 2012年12月29日至30日<br>3河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|daka-icon-hubei.png|")
+          .edit
+            h1 2012年12月29日至30日<br>4河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|daka-icon-hunan.png|")
+          .edit
+            h1 2012年12月29日至30日<br>5河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|daka-icon-shandong.png|")
+          .edit
+            h1 2012年12月29日至30日<br>6河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
       //- 2014
       .swiper-slide.clear
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|neimenggu.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
-          img(src="@|henan.png|")
+          .index-num
+          img(src="@|henan-0.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|xinjiang.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|daka-icon-fujian.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|jiangsu.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
       //- 2015
       .swiper-slide.clear
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|yunan.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|shanxi.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|zhejiang.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|guizhou.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|jilin.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
       //- 2016
       .swiper-slide.clear
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|chongqing.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|jiangxi.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|anhui.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|heilongjiang.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|ningxia.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|qinghai.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
       //- 2017
       .swiper-slide.clear
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|hebei-0.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|guangxi.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|shannxi.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|jiangsu.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
       .swiper-slide.clear
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|sichuan.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|daka-icon-hainan.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|daka-icon-hubei.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|daka-icon-shandong.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|dongbei.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|guangdng.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
       .swiper-slide.clear
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|jingjinji.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|chongqing.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|jiangxi.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|neimenggu.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|gansu.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|henan-0.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
       //- 2020
       .swiper-slide.clear
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|yunan.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|zhejiang.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|shanxi.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|shannxi.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|ningxia.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
         .swiper-slide-item(o-tap="showBox")
+          .index-num
           img(src="@|jilin.png|")
+          .edit
+            h1 2012年12月29日至30日<br>河北考察
+            .show-image-box
+              img.show(src="@|show.png|")
+            .text
+              p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
+              p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
 </template>
 <script>
 module.exports = {
   data: {
     activeItem: null,
-    clockList: [],
+    clockList: {},
     swiper: null
   },
   created: function () {
@@ -161,6 +529,20 @@ module.exports = {
         }
       },
     })
+    // 计算数量
+    const cardIndex = this.queryAll('.swiper-slide-item')
+    for (const key in cardIndex) {
+      if (cardIndex.hasOwnProperty(key)) {
+        const element = cardIndex[key];
+        const len = element.getElementsByClassName('edit').length
+        
+        if (len > 1) {
+          element.getElementsByClassName('index-num')[0].innerText = len
+        } else {
+          element.getElementsByClassName('index-num')[0].style.display = 'none'
+        }
+      }
+    }
   },
   changActive: function (index) {
     const itemList = this.queryAll('.index-bar .index-item')
@@ -209,22 +591,51 @@ module.exports = {
   },
   showBox: function () {
     // this.$target.classList.add('check')
+    const edit = this.$target.getElementsByClassName('edit')
+    console.log(edit)
+    let newHtml = ''
+    for (const key in edit) {
+      if (edit.hasOwnProperty(key)) {
+        const element = edit[key];
+        newHtml += element.innerHTML
+        newHtml += `<div class="so check-button button-box" o-tap="checkIt"><div class="so so-10">打卡</div><img class="so so-11" src="@|page1-537.png|"></div>`
+      }
+    }
+    this.query('.edit-box').innerHTML =  newHtml
     this.data.activeItem = this.$target
     this.query('.show-text-box').style.top = '0'
+    setTimeout(() => {
+      this.handleEvent(this, this.query('.edit-box'))
+    }, 0);
   },
   checkIt: function () {
+    this.$target.querySelector('.so-10').innerText = '已打卡'
+    
+    
     this.data.activeItem.classList.add('check')
-    this.data.clockList.push(this.data.activeItem.querySelector('img').src)
+    if (this.data.clockList[this.data.activeItem.querySelector('img').src]) {
+      this.data.clockList[this.data.activeItem.querySelector('img').src]++
+    } else {
+      this.data.clockList[this.data.activeItem.querySelector('img').src] = 1
+    }
+    
     setTimeout(() => {
-      this.query('.show-text-box').style.top = '-100%'
+      this.$target.style.pointerEvents = 'none'
     }, 100);
-    console.log(this.data.clockList)
     let newHtml = ''
-    this.data.clockList.forEach(element => {
-      newHtml += `<div class="clock-item"><img src="${element}"></div>`
-    })
+    for (const key in this.data.clockList) {
+      if (this.data.clockList.hasOwnProperty(key)) {
+        const element = this.data.clockList[key];
+        if (element > 1) {
+          newHtml += `<div class="clock-item"><img src="${key}"><div class="ind">${element}</div></div>`
+        } else {
+          newHtml += `<div class="clock-item"><img src="${key}"></div>`
+        }
+        
+      }
+    }
     this.query('.icon-box').innerHTML = newHtml
-    console.log(this.queryAll('.index-bar .index-item')[this.data.swiper.activeIndex])
+    this.data.activeItem.pointerEvents = 'none'
     this.queryAll('.index-bar .index-item')[this.data.swiper.activeIndex].classList.add('clock')
   },
   swiperTo: function (index) {
@@ -299,11 +710,6 @@ module.exports = {
   z-index: 99;
   transition: top 1s;
   .show {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 182px;
   }
   h1 {
     color: #3e724a;
@@ -317,17 +723,19 @@ module.exports = {
     right: 0;
   }
   .text {
-    position: absolute;
-    top: 610px;
     width: 90%;
-    left: 0;
-    right: 0;
     margin: auto;
     font-size: 28px;
     line-height: 42px;
     text-indent: 2em;
     color: #7c7c7c;
   }
+}
+.edit-box {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 .show-text {
   background-image: url('@|text-bg.png|');
@@ -401,7 +809,8 @@ module.exports = {
   margin: auto;
 }
 .check-button {
-  top: 940px;
+  position: relative;
+  top: auto;
 }
 .icon-box {
   height: 95px;
@@ -427,6 +836,20 @@ module.exports = {
   border-radius: 50px;
   margin: 0 7px;
   display: inline-block;
+  .ind {
+    position: absolute;
+    right: -5px;
+    top: 0px;
+    background-color: #fdc50f;
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 50px;
+  }
 }
 .daka-icon-box {
   position: absolute;
@@ -438,6 +861,40 @@ module.exports = {
 }
 .clock {
   background-image: url('@|index-item-clock.png|') !important;
-  
+}
+.edit {
+  display: none;
+}
+.show-image-box {
+  background-image: url('@|show-box.png|');
+  width: 676px;
+  height: 474px;
+  position: relative;
+  margin: 0 auto;
+  img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+.index-num {
+  position: absolute;
+  font-size: 30px;
+  background-color: #fdc50f;
+  color: white;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 20px;
+  font-weight: bold;
+  right: 25px;
+  top: 12px;
+}
+.so-10, .so-11 {
+  pointer-events: none;
 }
 </style>
