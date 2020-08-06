@@ -1,10 +1,94 @@
 <template lang="pug">
 .page3
-  
+  .share-box
+    .num 10
+    .people 5
+  img.so.so-12(src="@|page1-538.png|")
+  .so.share.button-box(o-tap="showShare")
+    .so.so-10 分享感悟
+    img.so.so-11(src="@|page1-537.png|")
+  .so.back.button-box(go="page2//moveToRight/moveFromLeft/true")
+    .so.so-10 返回上页
+    img.so.so-11(src="@|page1-537.png|")
 </template>
 <script>
 module.exports = {
+  showShare: function () {
+    owo.script.share.switchShare()
+  },
+  show: function () {
+    const clockNumber = owo.script.page2.data.clockList.length
+    this.query('.num').innerText = clockNumber
+    if (clockNumber == 0) {
+      this.query('.people').innerText = 0
+    } else if (clockNumber < 2) {
+      this.query('.people').innerText = 23
+    } else if (clockNumber < 3) {
+      this.query('.people').innerText = 26
+    } else if (clockNumber < 4) {
+      this.query('.people').innerText = 38
+    } else if (clockNumber < 5) {
+      this.query('.people').innerText = 42
+    } else if (clockNumber < 7) {
+      this.query('.people').innerText = 68
+    } else if (clockNumber < 8) {
+      this.query('.people').innerText = 86
+    } else if (clockNumber < 9) {
+      this.query('.people').innerText = 94
+    } else {
+      this.query('.people').innerText = 99
+    }
+  }
 }
 </script>
 <style lang="less">
+.share-box {
+  width: 512px;
+  height: 351px;
+  background-image: url('@|share-box.png|');
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 300px;
+}
+.so-12 {
+  left: 121px;
+  top: 1040px;
+  z-index: -2;
+}
+.num {
+  color: #fdc50f;
+  font-size: 66px;
+  font-weight: bold;
+  position: absolute;
+  top: 197px;
+  left: 235px;
+  line-height: 70px;
+  width: 80px;
+  text-align: center;
+}
+.people {
+  color: #fdc50f;
+  font-size: 66px;
+  font-weight: bold;
+  position: absolute;
+  top: 279px;
+  left: 227px;
+  line-height: 70px;
+}
+.share {
+  position: absolute;
+  top: 820px;
+  left: 290px;
+  right: 0;
+  margin: auto;
+}
+.back {
+  position: absolute;
+  top: 820px;
+  left: -290px;
+  right: 0;
+  margin: auto;
+}
 </style>

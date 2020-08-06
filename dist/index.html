@@ -1,127 +1,531 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <!-- 页面的元信息 -->
-    <title>{TAG_14226_TAG}</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-    <meta name="format-detection" content="telephone=no, email=no"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
-    <meta name="renderer" content="webkit"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="filetype" content="1"/>
-    <meta name="publishedtype" content="1"/>
-    <meta name="pagetype" content="2"/>
-    <meta name="screen-orientation" content="landscape"/>
-    <meta name="x5-orientation" content="landscape"/>
-    <meta name="full-screen" content="yes"/>
-    <meta name="x5-fullscreen" content="true"/>
-    <meta name="browsermode" content="application"/>
-    <meta name="x5-page-mode" content="app"/>
-    
-      <!-- 页面主样式文件 -->
-      <link charset="utf-8"  rel="stylesheet" href="./static/css/owo.core.css">
-      
-    <!-- 附属css文件 -->
-    <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
-    <link rel="stylesheet" href="./static/css/swiper.4.5.0.min.css" charset="utf-8">
-      
-  </head>
-  <body>
-    <div class="scale-box">
+
+<head>
+  <!-- 页面的元信息 -->
+  <title>{TAG_14226_TAG}</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="filetype" content="1" />
+  <meta name="publishedtype" content="1" />
+  <meta name="pagetype" content="2" />
+  <meta name="screen-orientation" content="landscape" />
+  <meta name="x5-orientation" content="landscape" />
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="browsermode" content="application" />
+  <meta name="x5-page-mode" content="app" />
+
+  <!-- 页面主样式文件 -->
+  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.core.css">
+
+  <!-- 附属css文件 -->
+  <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
+  <link rel="stylesheet" href="./static/css/swiper.4.5.0.min.css" charset="utf-8">
+
+</head>
+
+<body>
+  <div class="scale-box">
     <!-- 页面[loading]-->
-    <div class="loading-box page" template="loading" style="display: none;"><img class="so so-0" src="./static/resource/icon345.png"><img class="so so-1" src="./static/resource/icon344.png"><img class="so so-2" src="./static/resource/icon346.png"><img class="so so-3" src="./static/resource/icon347.png"><img class="so so-4" src="./static/resource/icon343.png"><img class="so so-5" src="./static/resource/icon322.png"><img class="so so-6" src="./static/resource/icon341.png"><img class="so so-7" src="./static/resource/icon342.png"><img class="so so-8" src="./static/resource/icon340.png"><img class="so so-9" src="./static/resource/icon337.png"><img class="so so-10" src="./static/resource/icon339.png"><img class="so so-11" src="./static/resource/icon338.png"><div class="loading-bar"><div class="num-bar"></div></div><span class="text">Loading</span><div class="num">0%</div></div>
+    <div class="loading-box page" template="loading" style="display: none;">
+      <img class="so so-0" src="./static/resource/icon345.png">
+      <img class="so so-1" src="./static/resource/icon344.png">
+      <img class="so so-2" src="./static/resource/icon346.png">
+      <img class="so so-3" src="./static/resource/icon347.png">
+      <img class="so so-4" src="./static/resource/icon343.png">
+      <img class="so so-5" src="./static/resource/icon322.png">
+      <img class="so so-6" src="./static/resource/icon341.png">
+      <img class="so so-7" src="./static/resource/icon342.png">
+      <img class="so so-8" src="./static/resource/icon340.png">
+      <img class="so so-9" src="./static/resource/icon337.png">
+      <img class="so so-10" src="./static/resource/icon339.png">
+      <img class="so so-11" src="./static/resource/icon338.png">
+      <div class="loading-bar">
+        <div class="num-bar"></div>
+      </div>
+    </div>
     <!-- 页面[page1]-->
-    <div class="page-1 page" template="page1" style="display: none;"><img class="so so-0" src="./static/resource/page1-274.png"><img class="so so-1" src="./static/resource/page1-546.png"><img class="so so-2" src="./static/resource/page1-555.png"><img class="so so-3" src="./static/resource/page1-549.png"><img class="so so-4" src="./static/resource/page1-550.png"><img class="so so-5" src="./static/resource/page1-551.png"><img class="so so-6" src="./static/resource/page1-552.png"><img class="so so-7" src="./static/resource/page1-553.png"><img class="so so-8" src="./static/resource/page1-548.png"><img class="so so-13" src="./static/resource/page1-547.png"><div class="so so-9" go="page2//moveToLeft/moveFromRight/true"><img class="so so-10" src="./static/resource/page1-536.png"><img class="so so-11" src="./static/resource/page1-537.png"></div><img class="so so-12" src="./static/resource/page1-538.png"></div>
+    <div class="page-1 page" template="page1" style="display: none;">
+      <img class="so so-0" src="./static/resource/page1-274.png">
+      <img class="so so-1" src="./static/resource/page1-546.png">
+      <img class="so so-2" src="./static/resource/page1-555.png">
+      <img class="so so-3" src="./static/resource/page1-549.png">
+      <img class="so so-4" src="./static/resource/page1-550.png">
+      <img class="so so-5" src="./static/resource/page1-551.png">
+      <img class="so so-6" src="./static/resource/page1-552.png">
+      <img class="so so-7" src="./static/resource/page1-553.png">
+      <img class="so so-8" src="./static/resource/page1-548.png">
+      <img class="so so-13" src="./static/resource/page1-547.png">
+      <div class="so so-9 button-box" go="page2//moveToLeft/moveFromRight/true">
+        <div class="so so-10">点击开启旅程</div>
+        <img class="so so-11" src="./static/resource/page1-537.png">
+      </div>
+      <img class="so so-12" src="./static/resource/page1-538.png">
+    </div>
     <!-- 页面[page2]-->
-    <div class="page2 page" template="page2" style="display: none;"><div class="daka-bg"><img class="next" src="./static/resource/right-button.png"></div><div class="shijian">2020</div><div class="show-text-box"><div class="show-text"><h1>2012年12月29日至30日<br>河北考察</h1><img class="close" src="./static/resource/close.png" o-tap="hideShow"><img class="show" src="./static/resource/show.png"><div class="text"><p> 习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。</p><p> 看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。</p></div></div></div><div class="swiper-container"><div class="swiper-wrapper"><div class="swiper-slide clear"><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/daka-icon-hebei.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/daka-icon-gansu.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/daka-icon-hainan.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/daka-icon-hubei.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/daka-icon-hunan.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/daka-icon-shandong.png"></div></div><div class="swiper-slide clear"><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/neimenggu.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/henan.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/xinjiang.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/daka-icon-fujian.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/jiangsu.png"></div></div><div class="swiper-slide clear"><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/yunan.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/shanxi.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/zhejiang.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/guizhou.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/jilin.png"></div></div><div class="swiper-slide clear"><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/hebei-0.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/guangxi.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/shannxi.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/jiangsu.png"></div></div><div class="swiper-slide clear"><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/sichuan.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/daka-icon-hainan.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/daka-icon-hubei.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/daka-icon-shandong.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/dongbei.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/guangdng.png"></div></div><div class="swiper-slide clear"><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/jingjinji.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/chongqing.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/jiangxi.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/neimenggu.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/gansu.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/henan-0.png"></div></div><div class="swiper-slide clear"><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/yunan.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/zhejiang.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/shanxi.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/shannxi.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/ningxia.png"></div><div class="swiper-slide-item" o-tap="showBox"><img src="./static/resource/jilin.png"></div></div></div></div></div>
+    <div class="page2 page" template="page2" style="display: none;">
+      <div class="daka-bg">
+        <img class="next" src="./static/resource/right-button.png">
+      </div>
+      <div class="shijian">2020</div>
+      <div class="daka-icon-box">
+        <div class="icon-box"></div>
+      </div>
+      <div class="show-text-box">
+        <div class="show-text">
+          <h1>2012年12月29日至30日<br>河北考察</h1>
+          <img class="close" src="./static/resource/close.png" o-tap="hideShow">
+          <img class="show" src="./static/resource/show.png">
+          <div class="text">
+            <p> 习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。</p>
+            <p> 看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。</p>
+          </div>
+          <div class="so check-button button-box" o-tap="checkIt">
+            <div class="so so-10">打卡</div>
+            <img class="so so-11" src="./static/resource/page1-537.png">
+          </div>
+        </div>
+      </div>
+      <div class="scrro-box">
+        <div class="index-bar">
+          <div class="index-item" style="width: 200px;" o-tap="swiperTo(0)">2012-2013</div>
+          <div class="fenge"></div>
+          <div class="index-item" o-tap="swiperTo(1)">2014</div>
+          <div class="fenge"></div>
+          <div class="index-item" o-tap="swiperTo(2)">2015</div>
+          <div class="fenge"></div>
+          <div class="index-item" o-tap="swiperTo(3)">2016</div>
+          <div class="fenge"></div>
+          <div class="index-item" o-tap="swiperTo(4)">2017</div>
+          <div class="fenge"></div>
+          <div class="index-item" o-tap="swiperTo(5)">2018</div>
+          <div class="fenge"></div>
+          <div class="index-item" o-tap="swiperTo(6)">2019</div>
+          <div class="fenge"></div>
+          <div class="index-item" o-tap="swiperTo(7)">2020</div>
+        </div>
+      </div>
+      <div class="so so-9 button-box" go="page3//moveToLeft/moveFromRight/true">
+        <div class="so so-10">下一步</div>
+        <img class="so so-11" src="./static/resource/page1-537.png">
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide clear">
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/daka-icon-hebei.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/daka-icon-gansu.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/daka-icon-hainan.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/daka-icon-hubei.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/daka-icon-hunan.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/daka-icon-shandong.png">
+            </div>
+          </div>
+          <div class="swiper-slide clear">
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/neimenggu.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/henan.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/xinjiang.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/daka-icon-fujian.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/jiangsu.png">
+            </div>
+          </div>
+          <div class="swiper-slide clear">
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/yunan.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/shanxi.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/zhejiang.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/guizhou.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/jilin.png">
+            </div>
+          </div>
+          <div class="swiper-slide clear">
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/chongqing.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/jiangxi.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/anhui.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/heilongjiang.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/ningxia.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/qinghai.png">
+            </div>
+          </div>
+          <div class="swiper-slide clear">
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/hebei-0.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/guangxi.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/shannxi.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/jiangsu.png">
+            </div>
+          </div>
+          <div class="swiper-slide clear">
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/sichuan.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/daka-icon-hainan.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/daka-icon-hubei.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/daka-icon-shandong.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/dongbei.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/guangdng.png">
+            </div>
+          </div>
+          <div class="swiper-slide clear">
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/jingjinji.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/chongqing.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/jiangxi.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/neimenggu.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/gansu.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/henan-0.png">
+            </div>
+          </div>
+          <div class="swiper-slide clear">
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/yunan.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/zhejiang.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/shanxi.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/shannxi.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/ningxia.png">
+            </div>
+            <div class="swiper-slide-item" o-tap="showBox">
+              <img src="./static/resource/jilin.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- 页面[page3]-->
-    <div class="page3 page" template="page3" style="display: none;"></div></div>
-    
+    <div class="page3 page" template="page3" style="display: none;">
+      <div class="share-box">
+        <div class="num">10</div>
+        <div class="people">5</div>
+      </div>
+      <img class="so so-12" src="./static/resource/page1-538.png">
+      <div class="so share button-box" o-tap="showShare">
+        <div class="so so-10">分享感悟</div>
+        <img class="so so-11" src="./static/resource/page1-537.png">
+      </div>
+      <div class="so back button-box" go="page2//moveToRight/moveFromLeft/true">
+        <div class="so so-10">返回上页</div>
+        <img class="so so-11" src="./static/resource/page1-537.png">
+      </div>
+    </div>
+  </div>
+  <!-- 插件[share]-->
+  <div class="share-page owo-block" o-tap="hideShare" template="share" style="display: none;">
+    <img class="share-img" src="https://cunchu.site/ozzx/resource/share.png">
+  </div>
 
-    <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="./static/js/main.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="https://cunchu.site/owo/plug/autoScale.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="./static/js/swiper.4.5.0.min.js" type="text/javascript"  charset="UTF-8"></script>
-<!-- 框架script文件 -->
-<script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
-<script type="text/javascript" charset="UTF-8">
-owo.script = {
-  "loading": {
-    "data": {
-      "imgList": [""]
-    },
-    "show": function show() {
-      var mum = owo.query('.num')[0];
-      var numBar = owo.query('.num-bar')[0];
-      this.preloadImages(this.data.imgList, function (e) {
-        setTimeout(function () {
-          // owo.go({noBack: true,page: "page1"})
-          owo.go("page1////true");
-        }, 500);
-      }, function (num) {
-        numBar.style.width = num + '%';
-        mum.innerHTML = num + '%';
-      });
-    },
-    "preloadImage": function preloadImage(src, successFn) {
-      var image = new Image();
-      image.src = src;
 
-      image.onload = function () {
-        successFn && successFn(src);
-      };
+  <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="https://cunchu.site/owo/plug/autoScale.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/swiper.4.5.0.min.js" type="text/javascript" charset="UTF-8"></script>
+  <!-- 框架script文件 -->
+  <script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    owo.script = {
+      "loading": {
+        "data": {
+          "imgList": ["./static/resource/page1-542.jpg", "./static/resource/show.png", "./static/resource/daka-icon-hebei.png", "./static/resource/hebei-0.png", "./static/resource/jingjinji.png", "./static/resource/chongqing.png", "./static/resource/guangdng.png", "./static/resource/yunan.png", "./static/resource/page1-274.png", "./static/resource/share-box.png", "./static/resource/page1-546.png", "./static/resource/page1-538.png", "./static/resource/daka-icon-hunan.png", "./static/resource/icon341.png", "./static/resource/heilongjiang.png", "./static/resource/dongbei.png", "./static/resource/icon345.png", "./static/resource/icon344.png", "./static/resource/jiangxi.png", "./static/resource/henan.png", "./static/resource/daka-icon-hubei.png", "./static/resource/anhui.png", "./static/resource/xinjiang.png", "./static/resource/jilin.png", "./static/resource/page1-553.png", "./static/resource/henan-0.png", "./static/resource/ningxia.png", "./static/resource/page1-547.png", "./static/resource/icon346.png", "./static/resource/jiangsu.png", "./static/resource/sichuan.png", "./static/resource/daka-icon-fujian.png", "./static/resource/icon343.png", "./static/resource/icon337.png", "./static/resource/icon347.png", "./static/resource/neimenggu.png", "./static/resource/page1-555.png", "./static/resource/daka-icon-hainan.png", "./static/resource/daka-icon-gansu.png", "./static/resource/text-bg.png", "./static/resource/guizhou.png", "./static/resource/gansu.png", "./static/resource/qinghai.png", "./static/resource/zhejiang.png", "./static/resource/daka-icon-shandong.png", "./static/resource/page1-549.png", "./static/resource/shannxi.png", "./static/resource/shanxi.png", "./static/resource/page1-550.png", "./static/resource/icon340.png", "./static/resource/icon342.png", "./static/resource/page1-548.png", "./static/resource/page1-551.png", "./static/resource/page1-552.png", "./static/resource/guangxi.png", "./static/resource/icon339.png", "./static/resource/icon322.png", "./static/resource/icon338.png", "./static/resource/check.png", "./static/resource/daka-bg.png", "./static/resource/index-item.png", "./static/resource/index-item-active.png", "./static/resource/page1-537.png", "./static/resource/shijian.png", "./static/resource/page1-536.png", "./static/resource/close.png", "./static/resource/right-button.png", "./static/resource/index-box.png"]
+        },
+        "show": function show() {
+          var itemList = this.queryAll('.so');
 
-      image.onerror = function (error) {
-        successFn && successFn(src);
-      };
-    },
-    "preloadImages": function preloadImages(srcs, doneFn, progressFn) {
-      var _this = this;
+          var _loop = function _loop(index) {
+            var element = itemList[index];
+            setTimeout(function() {
+              element.classList.add('kaishi');
+            }, index * 120);
+          };
 
-      if (!Array.isArray(srcs)) {
-        console.log('第一个参数只能是一个数组');
-      } else {
-        var allCount = srcs.length;
-        var doneCount = 0;
-        srcs.forEach(function (srcItem) {
-          _this.preloadImage(srcItem, function () {
-            doneCount++;
-            progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
+          for (var index = 0; index < itemList.length; index++) {
+            _loop(index);
+          }
 
-            if (doneCount === allCount) {
-              doneFn && doneFn();
+          var mum = owo.query('.num')[0];
+          var numBar = owo.query('.num-bar')[0];
+          this.preloadImages(this.data.imgList, function(e) {
+            setTimeout(function() {
+              // owo.go({noBack: true,page: "page1"})
+              owo.go("page1////true");
+            }, 2000);
+          }, function(num) {
+            numBar.style.width = num + '%'; // mum.innerHTML = num + '%'
+          });
+        },
+        "preloadImage": function preloadImage(src, successFn) {
+          var image = new Image();
+          image.src = src;
+
+          image.onload = function() {
+            successFn && successFn(src);
+          };
+
+          image.onerror = function(error) {
+            successFn && successFn(src);
+          };
+        },
+        "preloadImages": function preloadImages(srcs, doneFn, progressFn) {
+          var _this2 = this;
+
+          if (!Array.isArray(srcs)) {
+            console.log('第一个参数只能是一个数组');
+          } else {
+            var allCount = srcs.length;
+            var doneCount = 0;
+            srcs.forEach(function(srcItem) {
+              _this2.preloadImage(srcItem, function() {
+                doneCount++;
+                progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
+
+                if (doneCount === allCount) {
+                  doneFn && doneFn();
+                }
+              });
+            });
+          }
+        }
+      },
+      "page1": {
+        "created": function created() {
+          owo.animate('lightSpeedIn', this.query('.so-13'), 2500);
+          owo.animate('rotateIn', this.query('.so-3'), 0);
+          owo.animate('rotateIn', this.query('.so-4'), 500);
+          owo.animate('rotateIn', this.query('.so-5'), 1000);
+          owo.animate('rotateIn', this.query('.so-6'), 1500);
+          owo.animate('rotateIn', this.query('.so-7'), 2000);
+        }
+      },
+      "page2": {
+        "data": {
+          "activeItem": null,
+          "clockList": [],
+          "swiper": null
+        },
+        "created": function created() {
+          owo.tool.toast('左右滑动切换年份');
+
+          var _this = this;
+
+          this.data.swiper = new Swiper('.swiper-container', {
+            on: {
+              slideChange: function slideChange() {
+                _this.changActive(this.activeIndex);
+              },
+              init: function init() {
+                _this.changActive(this.activeIndex);
+              }
             }
           });
-        });
-      }
-    }
-  },
-  "page1": {
-    "created": function created() {
-      owo.animate('lightSpeedIn', this.query('.so-13'), 2500);
-      owo.animate('rotateIn', this.query('.so-3'), 0);
-      owo.animate('rotateIn', this.query('.so-4'), 500);
-      owo.animate('rotateIn', this.query('.so-5'), 1000);
-      owo.animate('rotateIn', this.query('.so-6'), 1500);
-      owo.animate('rotateIn', this.query('.so-7'), 2000);
-    }
-  },
-  "page2": {
-    "created": function created() {
-      var swiper = new Swiper('.swiper-container', {});
-    },
-    "hideShow": function hideShow() {
-      this.query('.show-text-box').style.display = 'none';
-    },
-    "showBox": function showBox() {
-      this.query('.show-text-box').style.display = 'block';
-    }
-  },
-  "page3": {}
-};
-</script>
+        },
+        "changActive": function changActive(index) {
+          var itemList = this.queryAll('.index-bar .index-item');
+          itemList.forEach(function(element) {
+            element.classList.remove('active');
+          });
 
-  </body>
+          switch (index) {
+            case 0:
+              itemList[0].classList.add('active');
+              this.query('.shijian').innerText = '2012-2013';
+              break;
+
+            case 1:
+              itemList[1].classList.add('active');
+              this.query('.shijian').innerText = '2014';
+              break;
+
+            case 2:
+              itemList[2].classList.add('active');
+              this.query('.shijian').innerText = '2015';
+              break;
+
+            case 3:
+              itemList[3].classList.add('active');
+              this.query('.shijian').innerText = '2016';
+              break;
+
+            case 4:
+              itemList[4].classList.add('active');
+              this.query('.shijian').innerText = '2017';
+              break;
+
+            case 5:
+              itemList[5].classList.add('active');
+              this.query('.shijian').innerText = '2018';
+              break;
+
+            case 6:
+              itemList[6].classList.add('active');
+              this.query('.shijian').innerText = '2019';
+              break;
+
+            case 7:
+              itemList[7].classList.add('active');
+              this.query('.shijian').innerText = '2020';
+              break;
+
+            default:
+              break;
+          }
+        },
+        "hideShow": function hideShow() {
+          this.query('.show-text-box').style.top = '-100%';
+        },
+        "showBox": function showBox() {
+          // this.$target.classList.add('check')
+          this.data.activeItem = this.$target;
+          this.query('.show-text-box').style.top = '0';
+        },
+        "checkIt": function checkIt() {
+          var _this3 = this;
+
+          this.data.activeItem.classList.add('check');
+          this.data.clockList.push(this.data.activeItem.querySelector('img').src);
+          setTimeout(function() {
+            _this3.query('.show-text-box').style.top = '-100%';
+          }, 100);
+          console.log(this.data.clockList);
+          var newHtml = '';
+          this.data.clockList.forEach(function(element) {
+            newHtml += "<div class=\"clock-item\"><img src=\"" + element + "\"></div>";
+          });
+          this.query('.icon-box').innerHTML = newHtml;
+          console.log(this.queryAll('.index-bar .index-item')[this.data.swiper.activeIndex]);
+          this.queryAll('.index-bar .index-item')[this.data.swiper.activeIndex].classList.add('clock');
+        },
+        "swiperTo": function swiperTo(index) {
+          this.data.swiper.slideTo(index);
+        }
+      },
+      "page3": {
+        "showShare": function showShare() {
+          owo.script.share.switchShare();
+        },
+        "show": function show() {
+          var clockNumber = owo.script.page2.data.clockList.length;
+          this.query('.num').innerText = clockNumber;
+
+          if (clockNumber == 0) {
+            this.query('.people').innerText = 0;
+          } else if (clockNumber < 2) {
+            this.query('.people').innerText = 23;
+          } else if (clockNumber < 3) {
+            this.query('.people').innerText = 26;
+          } else if (clockNumber < 4) {
+            this.query('.people').innerText = 38;
+          } else if (clockNumber < 5) {
+            this.query('.people').innerText = 42;
+          } else if (clockNumber < 7) {
+            this.query('.people').innerText = 68;
+          } else if (clockNumber < 8) {
+            this.query('.people').innerText = 86;
+          } else if (clockNumber < 9) {
+            this.query('.people').innerText = 94;
+          } else {
+            this.query('.people').innerText = 99;
+          }
+        }
+      },
+      "share": {
+        "created": function created() {
+          if (autoScaleInfo && autoScaleInfo.hideHeight) {
+            this.$el.getElementsByClassName('share-img')[0].style.top = -autoScaleInfo.hideHeight + 'px';
+          }
+        },
+        "showShare": function showShare() {
+          this.$el.style.display = 'block';
+        },
+        "hideShare": function hideShare() {
+          this.$el.style.display = 'none';
+        },
+        "switchShare": function switchShare() {
+          if (this.$el.style.display == 'block') {
+            this.$el.style.display = 'none';
+          } else {
+            this.$el.style.display = 'block';
+          }
+        }
+      }
+    };
+  </script>
+
+  <script src="./static/js/toast.js" type="text/javascript" charset="UTF-8"></script>
+</body>
+
 </html>

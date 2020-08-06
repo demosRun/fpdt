@@ -10,8 +10,8 @@
   img.so.so-7(src="@|page1-553.png|")
   img.so.so-8(src="@|page1-548.png|")
   img.so.so-13(src="@|page1-547.png|")
-  .so.so-9(go="page2//moveToLeft/moveFromRight/true")
-    img.so.so-10(src="@|page1-536.png|")
+  .so.so-9.button-box(go="page2//moveToLeft/moveFromRight/true")
+    .so.so-10 点击开启旅程
     img.so.so-11(src="@|page1-537.png|")
   img.so.so-12(src="@|page1-538.png|")
 
@@ -35,7 +35,6 @@
 .page-1 {
   width: 100%;
   height: 100%;
-  background-image: url('@|page1-542.jpg|');
 }
 .so {
   position: absolute;
@@ -88,28 +87,14 @@
 .so-9 {
   left: 239px;
   top: 1038px;
-  width: 272px;
-  height: 115px;
   z-index: 1;
-}
-.so-10 {
-  left: 14px;
-  top: 0px;
-  z-index: 0;
-}
-.so-11 {
-  left: 0px;
-  top: 16px;
-  z-index: -1;
 }
 .so-12 {
   left: 121px;
   top: 1258px;
   z-index: -2;
 }
-.so-10:active {
-  transform: translate(0px, 5px);
-}
+
 .so-13 {
   left: 387px;
   top: 665px;

@@ -14,28 +14,103 @@
   img.so.so-11(src="@|icon338.png|")
   .loading-bar
     .num-bar
-  span.text Loading
-  .num 0%
+  //- span.text Loading
+  //- .num 0%
 </template>
 
 <script>
   module.exports = {
     data: {
       imgList: [
-        ""
+        "@|page1-542.jpg|",
+        "@|show.png|",
+        "@|daka-icon-hebei.png|",
+        "@|hebei-0.png|",
+        "@|jingjinji.png|",
+        "@|chongqing.png|",
+        "@|guangdng.png|",
+        "@|yunan.png|",
+        "@|page1-274.png|",
+        "@|share-box.png|",
+        "@|page1-546.png|",
+        "@|page1-538.png|",
+        "@|daka-icon-hunan.png|",
+        "@|icon341.png|",
+        "@|heilongjiang.png|",
+        "@|dongbei.png|",
+        "@|icon345.png|",
+        "@|icon344.png|",
+        "@|jiangxi.png|",
+        "@|henan.png|",
+        "@|daka-icon-hubei.png|",
+        "@|anhui.png|",
+        "@|xinjiang.png|",
+        "@|jilin.png|",
+        "@|page1-553.png|",
+        "@|henan-0.png|",
+        "@|ningxia.png|",
+        "@|page1-547.png|",
+        "@|icon346.png|",
+        "@|jiangsu.png|",
+        "@|sichuan.png|",
+        "@|daka-icon-fujian.png|",
+        "@|icon343.png|",
+        "@|icon337.png|",
+        "@|icon347.png|",
+        "@|neimenggu.png|",
+        "@|page1-555.png|",
+        "@|daka-icon-hainan.png|",
+        "@|daka-icon-gansu.png|",
+        "@|text-bg.png|",
+        "@|guizhou.png|",
+        "@|gansu.png|",
+        "@|qinghai.png|",
+        "@|zhejiang.png|",
+        "@|daka-icon-shandong.png|",
+        "@|page1-549.png|",
+        "@|shannxi.png|",
+        "@|shanxi.png|",
+        "@|page1-550.png|",
+        "@|icon340.png|",
+        "@|icon342.png|",
+        "@|page1-548.png|",
+        "@|page1-551.png|",
+        "@|page1-552.png|",
+        "@|guangxi.png|",
+        "@|icon339.png|",
+        "@|icon322.png|",
+        "@|icon338.png|",
+        "@|check.png|",
+        "@|daka-bg.png|",
+        "@|index-item.png|",
+        "@|index-item-active.png|",
+        "@|page1-537.png|",
+        "@|shijian.png|",
+        "@|page1-536.png|",
+        "@|close.png|",
+        "@|right-button.png|",
+        "@|index-box.png|",
       ]
     },
     show: function () {
+      const itemList = this.queryAll('.so')
+      for (let index = 0; index < itemList.length; index++) {
+        const element = itemList[index];
+        setTimeout(() => {
+          element.classList.add('kaishi')
+        }, index * 120);
+      }
+      
       const mum = owo.query('.num')[0]
       const numBar = owo.query('.num-bar')[0]
       this.preloadImages(this.data.imgList, (e) => {
         setTimeout(() => {
           // owo.go({noBack: true,page: "page1"})
           owo.go("page1////true")
-        }, 500)
+        }, 2000)
       }, (num) => {
         numBar.style.width = num + '%'
-        mum.innerHTML = num + '%'
+        // mum.innerHTML = num + '%'
       })
     },
     preloadImage: function (src, successFn) {
@@ -77,66 +152,16 @@
 }
 .so {
   position: absolute;
+  transition: all 1s;
+  opacity: 0;
 }
-.so-0 {
-  left: 391px;
-  top: 208px;
-  z-index: 11;
-}
-.so-1 {
-  left: 128px;
-  top: 319px;
-  z-index: 10;
-}
-.so-2 {
-  left: 472px;
-  top: 425px;
-  z-index: 9;
-}
-.so-3 {
-  left: 304px;
-  top: 530px;
-  z-index: 8;
-}
-.so-4 {
-  left: 118px;
-  top: 599px;
-  z-index: 7;
-}
-.so-5 {
-  left: 203px;
-  top: 799px;
-  z-index: 6;
-}
-.so-6 {
-  left: 458px;
-  top: 666px;
-  z-index: 5;
-}
-.so-7 {
-  left: 336px;
-  top: 833px;
-  z-index: 4;
-}
-.so-8 {
-  left: 510px;
-  top: 828px;
-  z-index: 3;
-}
-.so-9 {
-  left: 204px;
-  top: 934px;
-  z-index: 2;
-}
-.so-10 {
-  left: 459px;
-  top: 978px;
-  z-index: 1;
-}
-.so-11 {
+
+.so {
   left: 349px;
   top: 1051px;
   z-index: 0;
+  width: 72px;
+  height: 72px;
 }
 .loading-bar {
   height: 20px;

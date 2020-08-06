@@ -28,6 +28,10 @@ ul, li {
   list-style-type: none;
 }
 
+.scale-box {
+  background-image: url('../resource/page1-542.jpg');
+}
+
 a {
   cursor: pointer;
   text-decoration: none;
@@ -49,4 +53,102 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   display: block;
   visibility: hidden;
   clear: both;
+}
+
+.so {
+  position: absolute;
+}
+.button-box {
+  width: 247px;
+  height: 115px;
+}
+
+.button-box .so-10 {
+  left: 14px;
+  top: 0px;
+  z-index: 0;
+  width: 219px;
+  height: 76px;
+  background-image: url('../resource/page1-536.png');
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 66px;
+  text-align: center;
+  z-index: 1;
+}
+.button-box .so-10:active {
+  transform: translate(0px, 5px);
+}
+
+.button-box .so-11 {
+  left: 0px;
+  top: 16px;
+}
+
+.kaishi.so-0 {
+  left: 391px;
+  top: 208px;
+  z-index: 11;
+}
+.kaishi.so-1 {
+  left: 128px;
+  top: 319px;
+  z-index: 10;
+}
+.kaishi.so-2 {
+  left: 472px;
+  top: 425px;
+  z-index: 9;
+}
+.kaishi.so-3 {
+  left: 304px;
+  top: 530px;
+  z-index: 8;
+}
+.kaishi.so-4 {
+  left: 118px;
+  top: 599px;
+  z-index: 7;
+}
+.kaishi.so-5 {
+  left: 203px;
+  top: 799px;
+  z-index: 6;
+}
+.kaishi.so-6 {
+  left: 458px;
+  top: 666px;
+  z-index: 5;
+}
+.kaishi.so-7 {
+  left: 336px;
+  top: 833px;
+  z-index: 4;
+}
+.kaishi.so-8 {
+  left: 510px;
+  top: 828px;
+  z-index: 3;
+}
+.kaishi.so-9 {
+  left: 204px;
+  top: 934px;
+  z-index: 2;
+}
+.kaishi.so-10 {
+  left: 459px;
+  top: 978px;
+  z-index: 1;
+}
+.kaishi.so-11 {
+  left: 349px;
+  top: 1051px;
+  z-index: 0;
+}
+
+.kaishi.so {
+  width: auto;
+  height: auto;
+  opacity: 1;
 }

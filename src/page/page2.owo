@@ -3,6 +3,9 @@
   .daka-bg
     img.next(src="@|right-button.png|")
   .shijian 2020
+  .daka-icon-box
+    .icon-box
+
   .show-text-box
     .show-text
       h1 2012年12月29日至30日<br>河北考察
@@ -11,6 +14,29 @@
       .text
         p  习近平逐一走进困难群众唐荣斌家、唐宗秀家看望，盘腿坐在炕上，同乡亲手拉手，详细询问他们一年下来有多少收入，粮食够不够吃，过冬的棉被有没有，取暖的煤炭够不够，小孩上学远不远，看病方便不方便。
         p  看到老区一些乡亲尚未摆脱贫困、生活还比较困难，习近平强调，只要有信心，黄土变成金。
+      .so.check-button.button-box(o-tap="checkIt")
+        .so.so-10 打卡
+        img.so.so-11(src="@|page1-537.png|")
+  .scrro-box
+    .index-bar
+      .index-item(style="width: 200px;" o-tap="swiperTo(0)") 2012-2013
+      .fenge
+      .index-item(o-tap="swiperTo(1)") 2014
+      .fenge
+      .index-item(o-tap="swiperTo(2)") 2015
+      .fenge
+      .index-item(o-tap="swiperTo(3)") 2016
+      .fenge
+      .index-item(o-tap="swiperTo(4)") 2017
+      .fenge
+      .index-item(o-tap="swiperTo(5)") 2018
+      .fenge
+      .index-item(o-tap="swiperTo(6)") 2019
+      .fenge
+      .index-item(o-tap="swiperTo(7)") 2020
+  .so.so-9.button-box(go="page3//moveToLeft/moveFromRight/true")
+    .so.so-10 下一步
+    img.so.so-11(src="@|page1-537.png|")
   .swiper-container
     .swiper-wrapper
       .swiper-slide.clear
@@ -26,6 +52,7 @@
           img(src="@|daka-icon-hunan.png|")
         .swiper-slide-item(o-tap="showBox")
           img(src="@|daka-icon-shandong.png|")
+      //- 2014
       .swiper-slide.clear
         .swiper-slide-item(o-tap="showBox")
           img(src="@|neimenggu.png|")
@@ -37,6 +64,7 @@
           img(src="@|daka-icon-fujian.png|")
         .swiper-slide-item(o-tap="showBox")
           img(src="@|jiangsu.png|")
+      //- 2015
       .swiper-slide.clear
         .swiper-slide-item(o-tap="showBox")
           img(src="@|yunan.png|")
@@ -48,6 +76,21 @@
           img(src="@|guizhou.png|")
         .swiper-slide-item(o-tap="showBox")
           img(src="@|jilin.png|")
+      //- 2016
+      .swiper-slide.clear
+        .swiper-slide-item(o-tap="showBox")
+          img(src="@|chongqing.png|")
+        .swiper-slide-item(o-tap="showBox")
+          img(src="@|jiangxi.png|")
+        .swiper-slide-item(o-tap="showBox")
+          img(src="@|anhui.png|")
+        .swiper-slide-item(o-tap="showBox")
+          img(src="@|heilongjiang.png|")
+        .swiper-slide-item(o-tap="showBox")
+          img(src="@|ningxia.png|")
+        .swiper-slide-item(o-tap="showBox")
+          img(src="@|qinghai.png|")
+      //- 2017
       .swiper-slide.clear
         .swiper-slide-item(o-tap="showBox")
           img(src="@|hebei-0.png|")
@@ -100,15 +143,92 @@
 </template>
 <script>
 module.exports = {
+  data: {
+    activeItem: null,
+    clockList: [],
+    swiper: null
+  },
   created: function () {
-    var swiper = new Swiper('.swiper-container', {
+    owo.tool.toast('左右滑动切换年份')
+    const _this = this
+    this.data.swiper = new Swiper('.swiper-container', {
+      on: {
+        slideChange: function () {
+          _this.changActive(this.activeIndex);
+        },
+        init: function () {
+          _this.changActive(this.activeIndex);
+        }
+      },
     })
   },
+  changActive: function (index) {
+    const itemList = this.queryAll('.index-bar .index-item')
+    itemList.forEach(element => {
+      element.classList.remove('active')
+    });
+    switch (index) {
+      case 0:
+        itemList[0].classList.add('active')
+        this.query('.shijian').innerText = '2012-2013'
+        break;
+      case 1:
+        itemList[1].classList.add('active')
+        this.query('.shijian').innerText = '2014'
+        break;
+      case 2:
+        itemList[2].classList.add('active')
+        this.query('.shijian').innerText = '2015'
+        break;
+      case 3:
+        itemList[3].classList.add('active')
+        this.query('.shijian').innerText = '2016'
+        break;
+      case 4:
+        itemList[4].classList.add('active')
+        this.query('.shijian').innerText = '2017'
+        break;
+      case 5:
+        itemList[5].classList.add('active')
+        this.query('.shijian').innerText = '2018'
+        break;
+      case 6:
+        itemList[6].classList.add('active')
+        this.query('.shijian').innerText = '2019'
+        break;
+      case 7:
+        itemList[7].classList.add('active')
+        this.query('.shijian').innerText = '2020'
+        break;
+      default:
+        break;
+    }
+  },
   hideShow: function () {
-    this.query('.show-text-box').style.display = 'none'
+    this.query('.show-text-box').style.top = '-100%'
   },
   showBox: function () {
-    this.query('.show-text-box').style.display = 'block'
+    // this.$target.classList.add('check')
+    this.data.activeItem = this.$target
+    this.query('.show-text-box').style.top = '0'
+  },
+  checkIt: function () {
+    this.data.activeItem.classList.add('check')
+    this.data.clockList.push(this.data.activeItem.querySelector('img').src)
+    setTimeout(() => {
+      this.query('.show-text-box').style.top = '-100%'
+    }, 100);
+    console.log(this.data.clockList)
+    let newHtml = ''
+    this.data.clockList.forEach(element => {
+      newHtml += `<div class="clock-item"><img src="${element}"></div>`
+    })
+    this.query('.icon-box').innerHTML = newHtml
+    console.log(this.queryAll('.index-bar .index-item')[this.data.swiper.activeIndex])
+    this.queryAll('.index-bar .index-item')[this.data.swiper.activeIndex].classList.add('clock')
+  },
+  swiperTo: function (index) {
+    this.data.swiper.slideTo(index)
   }
 }
 </script>
@@ -116,14 +236,13 @@ module.exports = {
 .page2 {
   width: 100%;
   height: 100%;
-  background-image: url('@|page1-542.jpg|');
 }
 .daka-bg {
   background-image: url('@|daka-bg.png|');
   width: 750px;
   height: 136px;
   position: absolute;
-  top: 190px;
+  top: 160px;
 }
 .next {
   position: absolute;
@@ -135,8 +254,8 @@ module.exports = {
 }
 .swiper-container {
   position: absolute;
-  top: 530px;
-  height: 440px;
+  top: 420px;
+  height: 460px;
   overflow: hidden;
   width: 100%;
 }
@@ -148,6 +267,8 @@ module.exports = {
     top: 0;
     bottom: 0;
     margin: auto;
+    user-select: none;
+    pointer-events: none;
   }
   .swiper-slide-item {
     height: 50%;
@@ -173,10 +294,10 @@ module.exports = {
   background-color: rgba(0, 0, 0, 0.1);
   width: 100%;
   height: 100%;
-  top: 0;
+  top: -100%;
   left: 0;
   z-index: 99;
-  display: none;
+  transition: top 1s;
   .show {
     position: absolute;
     left: 0;
@@ -202,8 +323,8 @@ module.exports = {
     left: 0;
     right: 0;
     margin: auto;
-    font-size: 30px;
-    line-height: 48px;
+    font-size: 28px;
+    line-height: 42px;
     text-indent: 2em;
     color: #7c7c7c;
   }
@@ -224,5 +345,99 @@ module.exports = {
   right: 0;
   top: 0;
   padding: 20px;
+}
+.shijian {
+  left: -45px;
+  right: 0;
+  width: 260px;
+  text-align: center;
+  margin: auto;
+  top: 340px;
+}
+.scrro-box {
+  width: 96%;
+  overflow: auto;
+  position: absolute;
+  top: 930px;
+  padding: 0 2%;
+}
+.index-bar {
+  height: 100px;
+  display: flex;
+  width: 1000px;
+  
+  .index-item {
+    background-image: url('@|index-item.png|');
+    height: 45px;
+    line-height: 45px;
+    background-repeat: no-repeat;
+    font-size: 33px;
+    color: #723b31;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    background-position: center top;
+    padding-top: 55px;
+  }
+  .index-item.active {
+    background-image: url('@|index-item-active.png|');
+  }
+  .fenge {
+    background-repeat-y: no-repeat;
+    background-image: url('@|index-box.png|');
+    height: 100%;
+    width: 50px;
+    background-position: center 23px;
+  }
+}
+.check {
+  background-image: url('@|check.png|');
+  background-position: center;
+}
+.button-box {
+  top: 1080px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.check-button {
+  top: 940px;
+}
+.icon-box {
+  height: 95px;
+  width: auto;
+  white-space: nowrap;
+  img {
+    width: auto;
+    height: 82%;
+    display: block;
+    margin: auto auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+.clock-item {
+  height: 100%;
+  width: 95px;
+  position: relative;
+  background-color: white;
+  border-radius: 50px;
+  margin: 0 7px;
+  display: inline-block;
+}
+.daka-icon-box {
+  position: absolute;
+  height: 95px;
+  left: 205px;
+  top: 183px;
+  width: 520px;
+  overflow: auto;
+}
+.clock {
+  background-image: url('@|index-item-clock.png|') !important;
+  
 }
 </style>
